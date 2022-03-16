@@ -114,6 +114,7 @@ function displaySongInfo() {
   $('.artists').append(`<p>${song.artist}</p>`);
   $('.lengths').append(`<p>${song.length}</p>`);
   $('.links').append(`<a href="${song.music_link}"> ▶PLAY</a>`);
+  $('#totalL').html(`Current Playlist Length: ${defaultPlaylist.length} songs`);
 });
   
   
@@ -140,7 +141,7 @@ function addSongInfo() {
   let userLength = $('.length').val();
   let userLink = $('.link').val();
   
-  let userFullSong = [userSong,userArtist,userImage,userLength,userLink];
+  let userFullSong = {title: userSong, artist: userArtist, img_link: userImage, length: userLength, music_link: userLink};
   
   console.log("testing here add song funct");
   

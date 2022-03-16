@@ -6,6 +6,7 @@ h1 {
   letter-spacing: 5px;
   	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
+  margin-bottom: 50px;
 }
 
 h4 {
@@ -38,7 +39,7 @@ h4 {
 .images img {
   display: block;
   /* height: 100px; */
-  width: 100px;
+  width: 50px;
   height: 100px;
   width: auto;
   margin: 20px;
@@ -96,6 +97,16 @@ a:hover {
   color: white;
 }
 
+#totalL {
+  font-weight: 200;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin: 15px;
+  color: black;
+  font-size: 30px;
+}
+
 .form {
   width: 75%;
   margin: 0 auto 20px auto;
@@ -107,6 +118,7 @@ a:hover {
 color: white;
 font-size: 25px;
 font-style: oblique;
+margin: 10px;
 }
 
 input {
