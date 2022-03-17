@@ -22,7 +22,7 @@ let MJ2 = {title:"Billie Jean",
 
 let MJ3 = {title:"Thriller",
            artist:"Michael Jackson",
-           img_link:"https://i3.ytimg.com/vi/BsuEjAw5hg0/maxresdefault.jpg",
+           img_link:"https://img.youtube.com/vi/aUD0juRwb3I/maxresdefault.jpg",
            length:"5:57",
            music_link:"https://www.youtube.com/watch?v=BsuEjAw5hg0"}
 
@@ -34,7 +34,7 @@ let MJ4 = {title:"Remember The Time",
 
 let MJ5 = {title:"Smooth Criminal",
            artist:"Michael Jackson",
-           img_link:"https://img.youtube.com/vi/_mMyPJSx8RU/maxresdefault.jpg",
+           img_link:"https://img.youtube.com/vi/-DlMoJ2V6uk/maxresdefault.jpg",
            length:"4:17",
            music_link:"https://www.youtube.com/watch?v=tOgftEf7UDg"}
 
@@ -160,6 +160,28 @@ function addSongInfo() {
 
   // Complete Day 3 goals inside this function
 }
+
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+$(".delete").click(function() {
+  defaultPlaylist.pop();
+    console.log("seperator");
+  console.log(defaultPlaylist);
+    console.log("seperator");
+  emptySongInfo();
+  displaySongInfo();
+});
+
+$("#shuffle").click(function() {
+  shuffle(defaultPlaylist);
+    console.log("seperator");
+  console.log(defaultPlaylist);
+    console.log("seperator");
+  emptySongInfo();
+  displaySongInfo();
+});
 
 $(".add").click(function() {
   emptySongInfo();
